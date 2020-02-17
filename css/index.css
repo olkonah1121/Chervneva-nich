@@ -78,22 +78,32 @@ header section h1 {
 
  main .darkblue {
      background-image: url(../img/dark_blue_background.jpg);
-     min-height: 600px;
+     min-height: 400px;
+     max-width: 550px;
+     
      background-size: cover;
-     background-position: center;
+     background-position: left;
      display: flex;
      align-items: flex-start;
-     flex-direction: column;
+     flex-direction: row;
      justify-content: flex-start;
+     margin: 20px;
      
 }
  
 
 main  .darkblue img { float: left;
-     width: 10%;
-     margin: 10px;
+     width: 15%;
+     margin: 10px;;
 }
 
+main .darkblue p {
+     font-family: 'Quicksand', sans-serif;;
+    font-size: 2rem;
+    color: lavender;
+    margin: 20px;
+    text-align: left; 
+ }
 
     
 
