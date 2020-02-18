@@ -76,6 +76,7 @@ header section h1 {
         margin: 8px;
 }    
 
+
  main .darkblue {
      background-image: url(../img/dark_blue_background.jpg);
      min-height: 400px;
@@ -101,9 +102,80 @@ main .darkblue p {
      font-family: 'Quicksand', sans-serif;;
     font-size: 2rem;
     color: lavender;
-    margin: 20px;
-    text-align: left; 
+    margin: 10px;
+    text-align: start; 
  }
 
-    
+ main .muzyky { float: right;
+    width: 420px;
+    height: 400px;
+    margin: 0 10px 0 0;
+ }
 
+ main .tango { float: left;
+    width: 420px;
+    height: 400px;
+    margin: 0 0 0 20px;
+ }
+
+main .dancesection {
+     background-image: url(../img/dark-lighter-blue.png);
+     min-height: 400px;
+     max-width: 550px;
+     background-size: cover;
+     background-position: left;
+     display: flex;
+     align-items: flex-start;
+     flex-direction: row;
+     justify-content: flex-start;
+     margin: 20px 0 0 400px;
+    
+}
+
+main .dance { float: left;
+    width: 15%;
+    margin: 10px;
+}
+
+main .drone_with_people { float: right;
+    width: 420px;
+    height: 400px;
+ }
+
+main .dancesection p {
+    font-family: 'Quicksand', sans-serif;;
+   font-size: 2rem;
+   color: lavender;
+   margin: 10px;
+   text-align: unset; 
+}
+
+main .dronesection {
+    background-image: url(../img/dark_blue_background.jpg);
+    min-height: 400px;
+    max-width: 550px;
+    
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+    
+}
+
+
+main  .dronesection img { float: left;
+    width: 15%;
+    margin: 10px;;
+}
+
+main .dronesection p {
+    font-family: 'Quicksand', sans-serif;;
+   font-size: 2rem;
+   color: lavender;
+   margin:  10px;
+   text-align: left; 
+}
+    
