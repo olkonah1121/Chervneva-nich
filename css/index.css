@@ -37,9 +37,10 @@ header nav .logo a {
  header nav .menu {
     display: flex;
     flex: 1;
-    padding: 0;
+    padding: 20px;
     list-style-type: none;
     justify-content: space-around;
+    margin: 0px;
  }
 
  header nav .menu a {
@@ -108,7 +109,7 @@ main .darkblue p {
 
  main .muzyky { float: right;
     width: 420px;
-    height: 400px;
+    height: 452px;
     margin: 0 10px 0 0;
  }
 
@@ -178,4 +179,74 @@ main .dronesection p {
    margin:  10px;
    text-align: left; 
 }
-    
+
+form .name {
+    margin: 20px 0 0 150px;
+    color:var(--main-color);;
+}
+
+input[type=text], select {
+ width: 580px;
+ padding: 12px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 1px solid lavender;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
+
+form .post {
+    margin: 20px 0 0 40px;
+   color:var(--main-color);
+}
+
+input[type=email], select {
+   width: 580px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid lavender;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+
+ form .message {  margin: 20px 0 0 70px;
+   color:var(--main-color);
+   
+}
+
+input[type=submit] {
+ width: 580px;
+background-color: lavender;
+ color: var(--main-color);;
+ padding: 12px 20px;
+ margin: 8px 0;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+form .button {
+    margin: 20px 0 0 225px;
+}
+
+input[type=submit]:hover {
+ background-color: lightgrey;
+}
+section h2 {
+   font-family: 'Quicksand';
+   font-size: 2rem;
+   color: var(--main-color);
+   text-align: center;
+   margin: 50px;
+}
+
+#contact .card:hover i,#contact .card:hover h4,p,a{
+    color: var(--main-color);;
+}
+
+ #contact h3
+{
+    color: var(--main-color);
+}
+
