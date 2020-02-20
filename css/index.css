@@ -58,6 +58,7 @@ header nav .menu a:hover {
 @media (min-width: 800px) {
     header nav {
         display: flex;
+        
     }
 }
 header section {
@@ -100,7 +101,6 @@ main .musicians p {
      font-family: 'Quicksand', sans-serif;;
     font-size: 2rem;
     color: lavender;
-    margin: 10px;
     text-align: start; 
  }
 
