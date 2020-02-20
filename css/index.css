@@ -271,7 +271,8 @@ background-color: lavender;
 
 @media (max-width: 950px) { input[type=text],  input[type=email],  input[type=submit] ,  input[type=message]
     {
-    width: 500px;
+    max-width: 250px;
+    width: 150%;
    }
 } 
 
@@ -281,8 +282,8 @@ form .button {
 
 @media (max-width: 950px) { form .button
      {
-       margin: 0px;
-    
+       margin: 10px;
+       width: 100%;
     }
 }  
 
@@ -315,14 +316,6 @@ section h2
     color: var(--main-color);
 }
 
-
-@media (min-width: 660px) {
-    .product-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-    }
-}
 
 @media (min-width: 660px) {
     .main {
