@@ -65,10 +65,7 @@ header section {
     min-height: 600px;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
+    
 }
 
 header section h1 {
@@ -78,7 +75,7 @@ header section h1 {
 }    
 
 
- main .darkblue {
+ main .musicians {
      background-image: url(../img/dark_blue_background.jpg);
      min-height: 400px;
      max-width: 550px;
@@ -94,12 +91,12 @@ header section h1 {
 }
  
 
-main  .darkblue img { float: left;
+main  .musicians img { float: left;
      width: 15%;
      margin: 10px;;
 }
 
-main .darkblue p {
+main .musicians p {
      font-family: 'Quicksand', sans-serif;;
     font-size: 2rem;
     color: lavender;
@@ -107,17 +104,38 @@ main .darkblue p {
     text-align: start; 
  }
 
- main .muzyky { float: right;
+ @media (max-width: 900px) {
+    main .musicians { 
+        margin: 0px;
+    }
+}   
+
+
+ main .muzyky 
+ {
+    float: right;
     width: 420px;
     height: 452px;
     margin: 0 10px 0 0;
  }
+
+ @media (max-width: 910px) {
+    main .muzyky {
+      display: none;
+    }
+}  
 
  main .tango { float: left;
     width: 420px;
     height: 400px;
     margin: 0 0 0 20px;
  }
+
+ @media (max-width: 900px) {
+    main .tango {
+       display: none;
+    }
+}  
 
 main .dancesection {
      background-image: url(../img/dark-lighter-blue.png);
@@ -130,18 +148,18 @@ main .dancesection {
      flex-direction: row;
      justify-content: flex-start;
      margin: 20px 0 0 400px;
-    
 }
+
+@media (max-width: 900px) {
+    main .dancesection {
+       margin: 0px;
+    }
+}  
 
 main .dance { float: left;
     width: 15%;
     margin: 10px;
 }
-
-main .drone_with_people { float: right;
-    width: 420px;
-    height: 400px;
- }
 
 main .dancesection p {
     font-family: 'Quicksand', sans-serif;;
@@ -150,6 +168,24 @@ main .dancesection p {
    margin: 10px;
    text-align: unset; 
 }
+
+main .drone_with_people { float: right;
+    width: 420px;
+    height: 400px;
+ }
+
+ @media (min-width: 900px) {
+    main .drone_with_people{
+        display: flex;
+        
+    }
+}  
+
+ @media (max-width: 900px) {
+    main .drone_with_people{
+        display: none;
+    }
+}  
 
 main .dronesection {
     background-image: url(../img/dark_blue_background.jpg);
@@ -163,9 +199,14 @@ main .dronesection {
     flex-direction: row;
     justify-content: flex-start;
     margin: 20px;
-    
 }
 
+@media (max-width: 900px) {
+    main .dronesection
+     {
+       margin: 0px;
+    }
+}  
 
 main  .dronesection img { float: left;
     width: 15%;
@@ -179,13 +220,15 @@ main .dronesection p {
    margin:  10px;
    text-align: left; 
 }
-
-form .name {
+ 
+form .name 
+{
     margin: 20px 0 0 150px;
-    color:var(--main-color);;
+    color:var(--main-color);
 }
 
-input[type=text], select {
+input[type=text], select 
+{
  width: 580px;
  padding: 12px 20px;
  margin: 8px 0;
@@ -210,9 +253,9 @@ input[type=email], select {
    box-sizing: border-box;
  }
 
- form .message {  margin: 20px 0 0 70px;
+ form .message 
+ {  margin: 20px 0 0 70px;
    color:var(--main-color);
-   
 }
 
 input[type=submit] {
@@ -226,14 +269,35 @@ background-color: lavender;
  cursor: pointer;
 }
 
+@media (max-width: 950px) { input[type=text],  input[type=email],  input[type=submit] ,  input[type=message]
+    {
+    width: 500px;
+   }
+} 
+
 form .button {
     margin: 20px 0 0 225px;
 }
 
+@media (max-width: 950px) { form .button
+     {
+       margin: 0px;
+    
+    }
+}  
+
 input[type=submit]:hover {
  background-color: lightgrey;
 }
-section h2 {
+
+@media (max-width: 950px) {form .name , form .post, form .message 
+    { 
+  margin: 10px;     
+    }
+}  
+
+section h2 
+{
    font-family: 'Quicksand';
    font-size: 2rem;
    color: var(--main-color);
@@ -241,12 +305,35 @@ section h2 {
    margin: 50px;
 }
 
-#contact .card:hover i,#contact .card:hover h4,p,a{
+#contact .card:hover i,#contact .card:hover h4,p,a
+{
     color: var(--main-color);;
 }
 
  #contact h3
 {
     color: var(--main-color);
+}
+
+
+@media (min-width: 660px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 980px) {
+    .main { max-width: 100%;
+    }
 }
 
