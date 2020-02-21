@@ -12,7 +12,7 @@ body {
 
 
 h1, h2, p, section, header, main,
-footer {
+footer, form, a {
     margin: 0;
     padding: 0;
 }
@@ -55,18 +55,24 @@ header nav .menu a:hover {
     border: 1px solid var(--main-color);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     header nav {
         display: flex;
-        
     }
 }
+
+
 header section {
     background-image: url(../img/ivent.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
-    
+}
+
+header section .clock {
+    padding: 10px;
+    color: var(--main-color);
+    font-family: 'Lobster', cursive;
 }
 
 header section h1 {
@@ -88,9 +94,15 @@ header section h1 {
      flex-direction: row;
      justify-content: flex-start;
      margin: 20px;
-     
 }
  
+@media (max-width: 900px) {
+    body main {margin-left: auto;
+        margin-right: auto;
+        
+    }
+}   
+
 
 main  .musicians img { float: left;
      width: 15%;
@@ -101,6 +113,7 @@ main .musicians p {
      font-family: 'Quicksand', sans-serif;;
     font-size: 2rem;
     color: lavender;
+
     text-align: start; 
  }
 
@@ -115,7 +128,7 @@ main .musicians p {
  {
     float: right;
     width: 420px;
-    height: 452px;
+    height: 400px;
     margin: 0 10px 0 0;
  }
 
